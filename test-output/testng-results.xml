@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-19T12:44:48 IST" name="Default suite" finished-at="2023-12-19T12:45:41 IST" duration-ms="53215">
+    <groups>
+    </groups>
+    <test started-at="2023-12-19T12:44:48 IST" name="Default test" finished-at="2023-12-19T12:45:41 IST" duration-ms="53215">
+      <class name="userRegistrationTset.UserRegestrationTest">
+        <test-method is-config="true" signature="landingPage()[pri:0, instance:userRegistrationTset.UserRegestrationTest@313ac989]" started-at="2023-12-19T12:44:48 IST" name="landingPage" finished-at="2023-12-19T12:45:00 IST" duration-ms="12009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingPage -->
+        <test-method signature="userRegistration()[pri:0, instance:userRegistrationTset.UserRegestrationTest@313ac989]" started-at="2023-12-19T12:45:00 IST" name="userRegistration" finished-at="2023-12-19T12:45:41 IST" duration-ms="41142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistration -->
+      </class> <!-- userRegistrationTset.UserRegestrationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
