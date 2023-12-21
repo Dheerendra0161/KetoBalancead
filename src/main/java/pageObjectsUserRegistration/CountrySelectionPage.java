@@ -15,10 +15,10 @@ public class CountrySelectionPage extends UtilsCompo {
 		this.driver=driver;
 		PageFactory.initElements(driver,this);
 	}
-	@FindBy(xpath="//img[@alt='aus']")
-	 WebElement ele;
+	@FindBy(xpath="//img[@alt='usa']")
+	 WebElement ele1;
 	public GenderSelectionPage countrySelection() {
-		ele.click();
+		ele1.click();
 	    gender= new GenderSelectionPage(driver);
 	    return gender;
 	}

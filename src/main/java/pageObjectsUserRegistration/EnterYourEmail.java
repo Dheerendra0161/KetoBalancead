@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.github.javafaker.Faker;
+
 import utilsPackage.UtilsCompo;
 
 public class EnterYourEmail extends UtilsCompo {
@@ -20,7 +22,9 @@ public class EnterYourEmail extends UtilsCompo {
     @FindBy(xpath="//a[text()='Continue']")
     WebElement ele;
 	public Plans enterYourEmail() {
-	eleSend.sendKeys("xyz2015@yopmail.com");
+	Faker fkr=new Faker();
+	String email=fkr.internet().emailAddress();
+	eleSend.sendKeys(email);
 	ele.click();
 	plns=new Plans(driver);
 	return plns;
