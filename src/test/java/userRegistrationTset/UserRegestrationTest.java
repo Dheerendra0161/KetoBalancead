@@ -1,5 +1,6 @@
 package userRegistrationTset;
 
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import baseComponent.BaseCompo;
@@ -61,9 +62,12 @@ public class UserRegestrationTest extends BaseCompo {
 	GotIt gotit;
 
 	@Test
-	public void userRegistration() throws Throwable {
+	@Parameters("countryCode")
+	
+	public void userRegistration(String countryCode) throws Throwable {
 		country = begin.letsBegin();
-		gender = country.countrySelection();
+		gender = country.countrySelection(countryCode);
+		// gender = country.countrySelection();
 		body = gender.genderSelction();
 		bodytype = body.bodyType();
 		achieve = bodytype.choseBodyType();
@@ -78,17 +82,17 @@ public class UserRegestrationTest extends BaseCompo {
 		answer = day.spendYourDay();
 		weight = answer.multipleAnswers();
 		tall = weight.shedSomeExtraWeight();
-		currntwgt=tall.howTall();
-		targetweight=currntwgt.currentWeight();
-		age=targetweight.perfectWeight();
-		occasion=age.yourAge();
-		event=occasion.occasionYouWantToLoseWeight();
-		shape=event.yourEvent();
-		yourweight=shape.needToGetInShape();
-		mail=yourweight.yourWeight();
-		plns=mail.enterYourEmail();
-		backplans=plns.plans();
-		gotit=backplans.backToPlans();
+		currntwgt = tall.howTall();
+		targetweight = currntwgt.currentWeight();
+		age = targetweight.perfectWeight();
+		occasion = age.yourAge();
+		event = occasion.occasionYouWantToLoseWeight();
+		shape = event.yourEvent();
+		yourweight = shape.needToGetInShape();
+		mail = yourweight.yourWeight();
+		plns = mail.enterYourEmail();
+		backplans = plns.plans();
+		gotit = backplans.backToPlans();
 		gotit.gotIt();
 	}
 }

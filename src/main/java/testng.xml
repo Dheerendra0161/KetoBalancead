@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UserRegistrationSuite">
+
+
+	<test name="UserRegistrationTest_USA">
+		<parameter name="countryCode" value="USA" />
+		<classes>
+			<class name="userRegistrationTset.UserRegestrationTest" />
+		</classes>
+	</test>
+
+
+	<test name="UserRegistrationTest_UK">
+		<parameter name="countryCode" value="UK" />
+		<classes>
+			<class name="userRegistrationTset.UserRegestrationTest" />
+		</classes>
+	</test>
+
+	<test name="UserRegistrationTest_CA">
+		<parameter name="countryCode" value="CA" />
+		<classes>
+			<class name="userRegistrationTset.UserRegestrationTest" />
+		</classes>
+	</test>
+	<test name="UserRegistrationTest_AUS">
+		<parameter name="countryCode" value="AUS" />
+		<classes>
+			<class name="userRegistrationTset.UserRegestrationTest" />
+		</classes>
+	</test>
+
+
+</suite>
